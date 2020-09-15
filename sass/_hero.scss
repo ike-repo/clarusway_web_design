@@ -1,0 +1,45 @@
+.main-title {
+    //     min-height: 100%;
+    //     grid-area: 2 / 1 / 5 / -1;
+    //     display: flex;
+    width: 100%;
+    // text-align: center;
+    // justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.05em;
+    padding-top: 1.5em;
+}
+
+#title-par {
+    color: white;
+    vertical-align: top;
+    padding-bottom: 7em;
+}
+
+.hero {
+    grid-area: 7 / 1 / 10 / 6;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    .courses#pic1 {
+        width: 10%;
+        // height: auto;
+    }
+    .courses#pic2 {
+        max-width: 75%;
+        height: auto;
+    }
+    .courses#pic3 {
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+.courses {
+    margin: 3em 1vw;
+    //     size: 10%;
+}
