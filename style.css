@@ -1,160 +1,128 @@
 * {
-  margin: 0;
-  padding: 0;
+    border: 1px solid rgb(209, 209, 128);
+}
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .container {
-  display: grid;
-  width: 100%;
-  grid-template-areas: "header header header header header" "title title title title title" "title title title title title" "title title title title title" "title title title title title" "mid-nav mid-nav mid-nav mid-nav mid-nav" "course course course course course" "course course course course course" "course course course course course" "footer footer footer footer footer";
-  grid-template-rows: 1fr 4fr 1fr 3fr 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  font-family: "Open Sans", Arial, sans-serif;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-a {
-  text-decoration: none;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-#web-design {
-  background: url("/Users/ike/Desktop/CW/Sites/clarusway_web_design/img/showcase.jpg");
-  display: grid;
-  grid-area: 2/1/6/6;
-  align-items: center;
-  justify-content: center;
-  width: 120em;
-  object-fit: none;
-  object-position: bottom;
+.button_1 {
+    height: 36px;
+    background-color: #a9508b;
+    color: #ffffff;
 }
 
-.hero {
-  grid-area: 7/1/10/6;
+header {
+    background-color: #32424a;
+    color: #ffffff;
+    min-height: 70px;
+    border-bottom: 3px solid #a9508b;
 }
 
-.header {
-  grid-area: 1/1/2/6;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1.5px solid #bd49bd;
-  font-size: x-large;
-  background-color: #424242;
-  color: white;
-}
-.header .left-header {
-  font-weight: 900;
-  padding: 1em;
-}
-.header #left-header-first {
-  color: #aa35aa;
-  padding-right: 0.2em;
-}
-.header #left-header-second {
-  padding-left: 0.2em;
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
-.clarusway {
-  display: flex;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.right-header {
-  display: flex;
-  word-spacing: 20em;
-  padding: 1em;
-}
-.right-header .header-links {
-  color: white;
-  font-size: small;
+header li {
+    display: inline;
+    padding: 0 20px;
 }
 
-.mid-nav {
-  grid-area: 6/1/7/6;
-  display: flex;
-  min-height: 4rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: #424242;
-  color: white;
-}
-.mid-nav > .input-set {
-  grid-column: 6/5/7/6;
-  display: inline-flex;
-  margin-left: auto;
-  padding: 1em;
-  height: 1.7em;
-  box-shadow: none;
-}
-.mid-nav > .input-set > #inputbox {
-  border: none;
-  border-radius: 0.1em;
-  min-height: 1.7em;
-  padding-right: 5em;
-}
-.mid-nav > .input-set > #subscribe {
-  min-height: 1.7em;
-  border: none;
-  border-radius: 0.1em;
-  box-shadow: none;
-  min-width: 5em;
-  margin-left: 0.3em;
-  background-color: #ff3d00;
-  color: white;
-  font-size: 0.7em;
+header .highlight,
+header .current a {
+    color: #a9508b;
+    font-weight: bold;
 }
 
-#midnav-par {
-  padding-left: 1em;
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url("./img/showcase.jpg") no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin: 100px 0 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#newsletter {
+    padding: 15px 0;
+    background-color: #32424a;
+    color: #ffffff;
+}
+
+#newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    width: 250px;
+    height: 35px;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boxes .box {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
 }
 
 footer {
-  border: 3px solid green;
-  grid-area: 10/1/11/-1;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-footer div > img {
-  width: 30%;
-  height: 30px;
+    margin: 20px 0;
+    background-color: cornsilk;
+    text-align: center;
+    border-top: 3px solid #a9508b;
+    border-bottom: 3px solid #a9508b;
 }
 
-.main-title {
-  width: 100%;
+footer img {
+    width: 20%;
 }
-
-h1 {
-  text-align: center;
-  color: white;
-  letter-spacing: 0.05em;
-  padding-top: 1.5em;
-}
-
-#title-par {
-  color: white;
-  vertical-align: top;
-  padding-bottom: 7em;
-}
-
-.hero {
-  grid-area: 7/1/10/6;
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-}
-.hero .courses#pic1 {
-  width: 10%;
-}
-.hero .courses#pic2 {
-  max-width: 75%;
-  height: auto;
-}
-.hero .courses#pic3 {
-  max-width: 75%;
-  height: auto;
-}
-
-.courses {
-  margin: 3em 1vw;
-}
-
-/*# sourceMappingURL=style.css.map */
